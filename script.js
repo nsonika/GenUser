@@ -2,6 +2,24 @@ const generateUserButton = document.getElementById('generateUser');
 const userContainer = document.getElementById('userContainer');
 
 
+function copyToClipboard(button) {
+    const userCardElement = button.parentNode;
+    const userCardText = userCardElement.innerText;
+    const userCardImage = userCardElement.querySelector('img');
+    const userCardImageLink = userCardImage.src;
+    const copiedText = `${userCardText}\n\nImage: ${userCardImageLink}`;
+
+    navigator.clipboard.writeText(copiedText).then(() => {
+        const copyPopup = userCardElement.querySelector('.copy-popup');
+        copyPopup.classList.add('show');
+        setTimeout(() => {
+            copyPopup.classList.remove('show');
+        }, 2000);
+    }).catch(error => {
+        console.log('Copy to clipboard failed: ', error);
+    });
+}
+
 
 generateUserButton.addEventListener('click', () => {
     const gender = document.getElementById('gender').value;
