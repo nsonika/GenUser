@@ -29,4 +29,5 @@ It is built using HTML, CSS, and JavaScript. The project incorporates the Random
 ## What's next for GenUser 🔮
 
 - Implementing the functionality to copy all generated user information at once.
+- Selective copying of individual user data.
 - Expanded filtering options for more personalized user generation.
