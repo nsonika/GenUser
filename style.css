@@ -110,7 +110,6 @@ body{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
     padding: 3rem 7rem;
-    margin-bottom: 25px;
     margin-bottom: 45px;
   }
   
@@ -252,7 +251,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   #userContainer .user {
     flex-basis: 250px;
